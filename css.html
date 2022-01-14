@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+<style>
+	#b1{
+		background-color:#F3DDDD;
+		width:500px;
+		height:250px;
+		}
+	#b2{
+		background-color:#DA8888;
+		width:400px;
+		height:200px;
+		}
+	#b3{
+		background-color:#F3DDDD;
+		width:300px;
+		height:150px;
+		}
+	#b4{
+		background-color:#F3E793;
+		width:200px;
+		height:100px;
+		}
+	table{
+		margin:10%;
+		padding:5px;
+		background-color:#EFD6D6;
+		}
+	#top{
+		width:100%
+		height:50px;
+		background-color:#F3DE41;
+		text-align:center;
+		}
+	th{	
+		background-color:#8A8585;
+		color:white;
+		font-family:consolas;
+		}
+	#exam,textarea{
+			width:400px;
+			height:100px;
+			background-color:#EFD6D6;
+			opacity:0.5;
+			font-size:20px;
+			font-family:consolas;
+			}
+	#exam:hover{
+			opacity:1.0;
+			border:4px solid red;
+			}
+	textarea:focus{
+			opacity:1.0;
+			border:4px solid red;
+			}
+	a:active{
+			opacity:1.0;
+			border:4px solid red;
+			}
+	a:visited{
+			color:red;
+			background-color:yellow;
+			}	
+	a:link{
+			width:400px;
+			height:100px;
+			background-color:#EFD6D6;
+			opacity:0.5;
+			font-size:20px;
+			font-family:consolas;
+</style>
+</head>
+
+<body bgcolor="#F3E793">
+
+<div id="top"><h1>PADDING & MARGIN</h1></div>
+<center><br><br><br>
+<div id="b1">margin
+<div id="b2">border
+<div id="b3">padding
+<div id="b4">content</div>
+<br><br><br><br><br>
+<table border="1">
+	<caption>여백 크기 설정</caption>
+	<tr><td>{margin:top right bottom left;}</td></tr>
+	<tr><td>{margin:top right&left bottom;}</td></tr>
+	<tr><td>{margin:top&bottom right&left;}</td></tr>
+	<tr><td>{margin:top&bottom&right&left;}</td></tr>
+</table>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<div id="top"><h1>이벤트<h1></div>
+<center><br>
+<table border="1">
+	<caption>이벤트 가상 선택자 설명</caption>
+	<tr><th>이벤트 가상선택자</th><th>설명</th>
+	<tr><td>&nbsp; :link</td><td>사용자가 방문하지 않았던 곳 표시</td>
+	<tr><td>&nbsp; :visited</td><td>사용자가 방문한 곳을 표시</td></tr>
+	<tr><td>&nbsp; :active</td><td>링크를 클릭하는 순간</td></tr>
+	<tr><td>&nbsp; :hover</td><td>링크에 마우스 포인터를 올리는 순간</td></tr>
+	<tr><td>&nbsp; :focus</td><td>초점이 맞춰졌을 때</td></tr>
+</table>
+<h3>예시 보기</h3>
+<div id="exam">hover 이벤트 선택자<p>마우스를 올리면 스타일 변경</div><br>
+<textarea readonly>초점이 맞춰지면 스타일 변경</textarea>
+<br><br>
+<a href="#">active,visited,link 스타일</a>
+
+
+<div id="top"><h1>RADIUS & BORDER</h1></div>
+<table border="1">
+	<caption>테이블 스타일</caption>
+	<tr><th>속성값</th><th>설명</th></tr>
+	<tr><td>none</td><td>기본값으로 테두리가 나타나지 않는다</td></tr>
+	<tr><td>hidden</td><td>테두리를 감춘다</td><tr>
+	<tr><td>dotted</td><td>점선</td></tr>
+	<tr><td>dashed</td><td>파선</td></tr>
+	<tr><td>solid</td><td>실선</td></tr>
+	<tr><td>double</td><td>이중선</td></tr>
+	<tr><td>groove</td><td>오목한 선</td></tr>
+	<tr><td>ridge</td><td>볼록 선</td></tr>
+</table>
+<table border="1">
+	<caption>RADIUS</caption>
+	<tr><th>형식</th><th>설명</th></tr>
+	<tr><td>border-상하-좌우-radius:속성값;</td><td>border-radius:속성값;</td></tr>
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="test.css"></link>
+<style>
+.fixed1{
+		position:fixed;
+		background-color:#F3E0E0;
+		width:100%;
+		height:50px;
+		z-index:100;
+		text-align:center;
+		padding:10px;
+		}
+.study{
+	background-color:white;
+	height:300px;
+	width:400px;
+	border:2px solid black;
+	margin:3px;
+	float:left;
+	}
+</style>
+<script src="jquery-3.5.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("img#ans1").hide();
+		$("img#quest1").click(function(){
+			$("img#ans1").slideDown(6000);
+			});		
+		$("img#ans2").hide();
+		$("img#quest2").click(function(){
+			$("img#ans2").slideDown(6000);
+			});
+		$("img#ans3").hide();	
+		$("img#quest3").click(function(){
+			$("img#ans3").slideDown(6000);
+			});
+		$("img#ans4").hide();	
+		$("img#quest4").click(function(){
+			$("img#ans4").slideDown(6000);
+			});
+	});
+
+</script>
+<body bgcolor="#C4D0E6">
+	<h1><div class="fixed1">
+		<a href="#top">C언어</a> &nbsp; &nbsp;
+		<a href="#for">FOR문</a>&nbsp; &nbsp;
+		<a href="#while">WHILE문</a>&nbsp; &nbsp;
+		</h1>
+	</div><br><br><br><br>
+	<center>
+		<fieldset>
+			<legend><h1 id="for">FOR문</h1></legend>
+			<img class="study" src="images/cLang/for1.PNG">
+			<div class="study" style="float:left">
+				<h1>for문의 형식 설명</h1>
+				<h3>i=0부터 i<3 까지 i는 하나씩 증가</h3>
+				<h3>for(i=0; i<3; i++)</h3>
+				<h3>i가 i<3조건을 만족하지 않을 때 for문 </h3>
+				<h3>밖으로 나가 반복을 멈춘다.</h3>
+			<div>
+		</fieldset>
+		<fieldset>
+			<legend>문제 1</legend>
+			<img class="study" id="quest1" src="images/cLang/for2_1.PNG">
+			<img class="study" id="ans1" src="images/cLang/for2.PNG">
+			<textarea class="study" style="float:left;">답안 작성 공간!! 이미지 누르면 답안이 나옵니다.</textarea>
+		</fieldset>
+		<fieldset>
+			<legend>문제2</legend>
+			<img class="study" id="quest2" src="images/cLang/for3_1.PNG">
+			<img class="study" id="ans2" src="images/cLang/for3_2.PNG">
+			<img class="study" id="ans2" src="images/cLang/for3_3.PNG">
+			<textarea class="study">답안 작성 공간!! 이미지 누르면 답안이 나옵니다.</textarea>
+		</fieldset>
+		
+		<fieldset>
+			<legend id="while"><h1>WHILE문</h1></legend>
+			<textarea class="study" style="float:left" readonly>
+
+	while문은 세가지 형식이 있습니다. 
+	
+	1.DO WHILE문
+	
+	형식은 do while문 안에 반복할 내용을 작성하고 
+	while 문 밖에 조건을 달아줍니다.
+	다른 while문과 다른 점은 초기에 조건을 만족하는 
+	여부와 상관없이 while문 안에 들어온다는 점입니다.
+	
+	2.WHILE문
+	while 문은 while문 들어오기 전에 조건을 만족하는
+	지 판별할 수 있습니다. 
+	while()가로 안에 조건을 입력해 줍니다.
+	
+	3.WHILE(1)문
+	무한으로 반복하는 반복문입니다. 이 반복문을 사용
+	하기 위해서는 if문과 break을 사용해야 합니다. 
+	반복문 안에	조건문을 넣어 
+	조건을 만족할 경우 break;를 달아 반복문에서 
+	빠져나올 수 있도록 합니다.
+	
+		</textarea>
+		<img class="study" src="images/cLang/while1_1.PNG">
+		<img class="study" src="images/cLang/while1_2.PNG">
+		<img class="study" src="images/cLang/while1_4.PNG">	
+		<img class="study" src="images/cLang/while1_5.PNG">	
+		</fieldset>
+		<fieldset>
+			<legend>문제 1</legend>
+			<img class="study" id="quest3" src="images/cLang/while2_1.PNG">
+			<textarea class="study">답안 작성 공간!! 이미지 누르면 답안이 나옵니다.</textarea>
+			<img class="study" id="ans3" src="images/cLang/while2_2.PNG">
+		</fieldset>
+		<fieldselt>
+			<legend>문제 2</legend>
+			<img class="study" id="quest4" src="images/cLang/while3_1.PNG">
+			<textarea class="study">답안 작성 공간!! 이미지 누르면 답안이 나옵니다.</textarea>
+			<img class="study" id="ans4" src="images/cLang/while3_2.PNG">
+		</fieldset>
+</body>

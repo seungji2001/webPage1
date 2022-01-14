@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<title>소개</title>
+<style>
+	div{
+		border: 2px solid black;
+		overflow:auto;
+		margin:100px 0px;
+		}
+	img{
+		float:right;
+		width:1000px;
+		height:800px;
+		}
+</style>
+<script src="test.js"></script>
+<script type="text/javascript">
+	function request(){
+	var i;
+		for(i=0; i<member.length; i++){
+			if(member[i]==frm.inputName.value){
+				return true;
+				}
+			else
+				var flag=0;
+			}
+			if(flag==0){
+				alert('회원가입부터 하세요.');
+				frm.inputName.value=""; frm.inputEmail.value="";
+				}
+	}
+</script>
+</head>
+<body>
+	<div><img src="images/wudieIntro.jpg"><center><h1>소개</h1>
+	<pre>	
+<a href="index.html" style="text-decoration:none">메인페이지로<a>
+			<p>2020.06.25~</p>
+			<p>lisa2009343123456@gmail.com</p>
+			<p>경기도 용인시</p>
+			<p>백승지</li></p>
+			<p>회원가입자만 문의작성 가능합니다</ㅔ>
+			<center><a href="member.html" target="_self">회원가입하기</a>
+	</pre>
+	<hr><br>
+	<form name="frm" method="get" action="request.jsp" target="_self">
+	<table border="0">
+	<tr><th colspan="2">문의하기</th></tr>
+	<tr><td><input type="text" name="inputName" value="" placeholder="이름"></td>
+	<td><input type="text" name="inputEmail" value="" placeholder="이메일"></td></tr>
+	<tr><td colspan="2"><input type="text" name="inputTitle" value="" size="47"placeholder="제목"></td></tr>
+	<tr rowspan="4"><td colspan="2"><textarea name="member" cols="48" rows="5" size="20" placeholder="메세지를 입력해주세요."></textarea></tr>
+	<tr><td colspan="2" align="center"><button type="button" onClick="javascript:if(request()==true) submit()">제출</button></td></tr>
+	</table>
+	</form>
+	</div>

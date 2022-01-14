@@ -1,0 +1,14 @@
+a{
+	text-decoration:none;
+	color:black;
+	opacity:0.8;
+	font-size:25px;
+	}
+a:hover{
+	color:#690101;
+	opacity:1.0;
+	}
+a:visited{
+	color:black;
+}
+	

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="7,images/webPro.jpg">
+<script>
+	function answer(){
+		if(frm.ans.value=='a3d25v'){
+			alert('정답');
+			}
+		else{
+			alert('오답');
+			}
+		}
+</script>
+    <style>
+        @keyframes bounce {
+            from, to {
+                bottom: 0px;
+                animation-timing-function: ease-out;
+            }
+            50% {
+                bottom: 500px;
+                animation-timing-function: ease-in;
+            }
+        }
+	    div {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+			overflow:auto;
+        }	
+		div[id]{
+			background-color:black;
+			}
+        #b1 { 
+            left: 20px;
+            animation-duration: 5s;      
+        }	
+        #b2 { 
+            left: 100px;
+            animation-duration: 10s;      
+        }	
+        #b3 { 
+            left: 180px;
+            animation-duration: 3s;      
+        }
+        #b4 { 
+            right: 300px;
+            animation-duration: 8s;      
+        }
+        #b5 { 
+            right: 150px;
+            animation-duration: 1s;      
+        }
+		#b6{
+			right: 40px;
+			animation-duration:6s;
+			}
+		div.box1{
+			left:25%;
+			top:150px;
+			border:1px solid black;
+			padding:3cm;
+			width:40%;
+			height:40%;
+		}
+		div[id]:hover{
+			color:white;
+			}	
+		input,button{
+			position:relative;
+			top:100px;
+			}
+	</style>
+</head>
+<body bgcolor="gray">
+	<center>
+	<div class="box1">
+		<div id="b1">a</div>
+		<div id="b2">3</div>
+		<div id="b3">d</div>
+		<div id="b4">2</div>
+		<div id="b5">5</div>
+		<div id="b6">v</div>
+	</div>
+	<form name="frm">
+		<input type="text" name="ans" value="">
+		<button type="button" onclick="answer()">정답확인</button>
+	</form>
+	</center>
+</body>
+</html>
